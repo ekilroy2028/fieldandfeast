@@ -2,18 +2,28 @@
 
 
 /* IMPORTED FONTS */
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* CSS RESET */
 
 
 /* ROOT VARIABLES */
 
+:root {
+    --midnight-blue: #1f2a44;
+    --olive-green: #76885B;
+    --champagne-gold: #e5c185;
+    --linen:#F8F4EC
+    --dark-charcoal: #2b2b2b
+    --soft-white: #faf9f6
+}
 
 
 
 /* GLOBAL STYLES */
-
+body {
+    font-family: 'Playfair Display', Arial, sans-serif; 
+}
 
 
 
