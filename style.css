@@ -57,10 +57,10 @@ body {
     letter-spacing: 0.05em;
 }
 
-.logo-container {
+/* .logo-container {
     margin: 0 auto var(--spacing-md);
     max-width: 150px;
-}
+} */
 
 .logo {
     width: 100%;
