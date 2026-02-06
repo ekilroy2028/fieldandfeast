@@ -10,12 +10,19 @@
 /* ROOT VARIABLES */
 
 :root {
+
+    /* colors */
     --midnight-blue: #1f2a44;
     --olive-green: #76885B;
     --champagne-gold: #e5c185;
     --linen:#F8F4EC
     --dark-charcoal: #2b2b2b
     --soft-white: #faf9f6
+
+/* typography */
+--font-main: 'Playfair Display', Arial, sans-serif;
+
+
 }
 
 
