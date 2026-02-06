@@ -41,7 +41,7 @@ body {
 }
 
 
-    /* header */
+    /*Header */
 
 .site-header {
     background-color: var(--midnight-blue);
@@ -99,9 +99,7 @@ body {
     /* hdr */
     .site-header {
         padding: auto;
-    }
-
-
+}
 
 }
     
