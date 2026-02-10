@@ -146,7 +146,9 @@ h3 {
 }
 
         /* about section */
-.about-section {
+.about-section
+.offering-section
+.gallery-section {
     max-width: var(--container-max);
     margin-left: auto;
     margin-right: auto;
@@ -159,9 +161,70 @@ h3 {
 
         /* offering section */
 
+.offer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.offer-card {
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+}
+
+.offer-card p {
+    font-size: 0.95;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+}
+
+.offer-card ul {
+    list-style-position: inside;
+    margin-top: var(--spacing-sm);
+    padding-left: 0;
+}
+
+.offer-card li {
+    list-style-position: inside;
+    margin-top: var(--spacing-sm);
+    font-size: 0.95rem;
+}
+
+.offer-card strong {
+    font-weight: 600;
+}
+
+
 
         /* gallery section */
 
+.gallery-intro {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.gallery-item {
+    background-color: var(--linen);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
 
 
 
