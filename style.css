@@ -295,9 +295,13 @@ h3 {
         padding: var(--spacing-lg);
     }
 
-    .offer-card-grid {
+    .offer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-lg);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     h2 {
@@ -321,7 +325,7 @@ h3 {
     }
 
     .site-title {
-        max-width: 3.5rem;
+        font-size: 3.5rem;
     }
 
     .logo-container {
@@ -349,7 +353,7 @@ h3 {
         /* hdr */
 
     .site-title {
-        max-width: 4rem;
+        font-size: 4rem;
     }
 
     .site-tagline {
