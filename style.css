@@ -67,7 +67,7 @@ a:hover {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: 0rem 1rem;
+    padding: var(--spacing-lg) var(--spacing-sm);
 }
 
 .site-title {
@@ -97,16 +97,6 @@ a:hover {
 
     /* navi */
 
-/* .about-section::after,
-.offer-section::after {
-    content: "";
-    display: block;
-    width: 100vw;
-    height: 2px;
-    background-color: var(--champagne-gold);
-    margin-left: calc(-50vw + 50%);
-    margin-right: var(--spacing-xxl);
-} */
 
 .main-nav {
     background-color: var(--champagne-gold);
@@ -135,7 +125,7 @@ a:hover {
 }
 
 section {
-    margin-bottom: var(--spacing-xxl);
+    margin-bottom: var(--spacing-sm);
 }
 
 h2 {
@@ -158,6 +148,10 @@ h3 {
 .offer-section,
 .gallery-section {
     max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--spacing-xxl);
+    margin-bottom: var(--spacing-xxl);
 }
 
 .about-section,
@@ -168,7 +162,7 @@ h3 {
 
 .gallery-section {
     border-top: 2px solid var(--champagne-gold);
-    padding: auto;
+    padding-top: var(--spacing-xxl);
 }
 
 
