@@ -47,7 +47,6 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 .n
@@ -70,7 +69,7 @@ a:hover {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
 }
 
 .site-title {
