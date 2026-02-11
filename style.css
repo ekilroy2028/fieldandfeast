@@ -49,8 +49,6 @@ img {
     height: auto;
 }
 
-.n
-
 a {
     text-decoration: none;
     color: inherit;
@@ -79,10 +77,10 @@ a:hover {
     letter-spacing: 0.05em;
 }
 
-/* .logo-container {
+.logo-container {
     margin: 0 auto var(--spacing-md);
     max-width: 150px;
-} */
+}
 
 .logo {
     width: 100%;
@@ -98,6 +96,17 @@ a:hover {
 }
 
     /* navi */
+
+/* .about-section::after,
+.offer-section::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: var(--champagne-gold);
+    margin-left: calc(-50vw + 50%);
+    margin-right: var(--spacing-xxl);
+} */
 
 .main-nav {
     background-color: var(--champagne-gold);
@@ -145,13 +154,24 @@ h3 {
 }
 
         /* about section */
-.about-section
-.offering-section
+.about-section,
+.offer-section,
 .gallery-section {
     max-width: var(--container-max);
-    margin-left: auto;
-    margin-right: auto;
 }
+
+.about-section,
+.offer-section {
+    border-bottom: 2px solid var(--champagne-gold);
+
+}
+
+.gallery-section {
+    border-top: 2px solid var(--champagne-gold);
+    padding: auto;
+}
+
+
 
 .about-section p {
     font-size: 1rem;
@@ -198,6 +218,12 @@ h3 {
 
 
         /* gallery section */
+figcaption {
+    font-size: medium;
+    font-style: italic;
+    text-align: center;
+    margin: 1px;
+}
 
 .gallery-intro {
     font-size: 1rem;
@@ -225,7 +251,26 @@ h3 {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
+.gallery-cta {
+    display: block;
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    text-align: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
 
+.gallery-cta:hover {
+    opacity: 0.85;
+    color: var(--soft-white);
+}
+
+
+
+        /* footer */
 .site-footer{
     background-color: var(--midnight-blue);
     color: var(--soft-white);
@@ -260,7 +305,7 @@ h3 {
     display: flex;
     justify-content: center;
     gap: var(--spacing-lg);
-    margin-top: var(--spacing-md)
+    margin-top: var(--spacing-md);
 }
 
 .social-links {
@@ -313,6 +358,13 @@ h3 {
     }
 }
 
+@media screen and (min-width: 600px) {
+    .offer-card:nth-child(3) {
+        grid-column: span 2;
+    }
+} 
+    
+
 
 
 
@@ -320,9 +372,7 @@ h3 {
 
 @media screen and (min-width: 900px) {
         /* hdr */
-    .site-header {
-        padding: var(--spacing-xxl) var(--spacing-lg);
-    }
+
 
     .site-title {
         font-size: 3.5rem;
@@ -372,7 +422,9 @@ h3 {
     }
 
     .main-nav a {
+        color: inherit;
         font-size: 1.1rem;
+        color: var(--midnight-blue);
     }
 
         /* gallery -5 col */
