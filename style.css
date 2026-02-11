@@ -290,6 +290,7 @@ h3 {
 
 /* MEDIA QUERY (medium) */
 @media screen (min-width: 600px) {
+
     .site-title {
         font-size: 3rem;
     }
@@ -311,6 +312,14 @@ h3 {
         gap: var(--spacing-lg);
     }
 
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}
 
 
 
