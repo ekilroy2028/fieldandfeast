@@ -230,7 +230,17 @@ h3 {
 
 
 
+.site-footer{
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-sm)
+}
 
+,.site-footer address {
+    font-style: normal;
+    
+}
 
 /* MEDIA QUERY (mobile first/small) */
 
