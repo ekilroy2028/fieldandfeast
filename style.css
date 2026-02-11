@@ -242,6 +242,46 @@ h3 {
     
 }
 
+.site-address {
+    font-style: normal;
+    margin-bottom: var(--spacing-lg);
+}
+
+.site-address p {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-sx);
+}
+
+.site-footer a {
+    color: var(--champagne-gold);
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: var(--soft-white);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md)
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.social-links a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
 /* MEDIA QUERY (mobile first/small) */
 
 
@@ -249,6 +289,27 @@ h3 {
 
 
 /* MEDIA QUERY (medium) */
+@media screen (min-width: 600px) {
+    .site-title {
+        font-size: 3rem;
+    }
+
+    .site-tagline {
+        font-size: 1.1rem;
+    }
+
+    .logo-container {
+        max-width: 180px;
+    }
+
+    main {
+        padding: var(--spacing-lg);
+    }
+
+    .offer-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
 
 
 
