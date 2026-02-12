@@ -91,7 +91,7 @@ a:hover {
 .site-tagline {
     font-size: 1rem;
     font-style: italic;
-    margin-bottom: var(--spacing-lg);
+
     font-weight: 400;
 }
 
@@ -102,7 +102,7 @@ a:hover {
     background-color: var(--champagne-gold);
     display: flex;
     justify-content: space-around;
-    padding: var(--spacing-sm);
+
     margin: 0 calc(-1 * var(--spacing-sm));
     margin-top: var(--spacing-md);
 }
@@ -110,8 +110,8 @@ a:hover {
 .main-nav a {
     color: var(--midnight-blue);
     font-weight: 600;
-    font-size: 1rem;
-    padding: var(--spacing-xs);
+    font-size: 1.25rem;
+
     transition: opacity 0.3s ease;
 }
 
@@ -144,14 +144,7 @@ h3 {
 }
 
         /* about section */
-.about-section,
-.offer-section,
-.gallery-section {
-    max-width: var(--container-max);
-    margin-left: auto;
-    margin-right: auto;
-    padding: var(--spacing-xxl);
-    margin-bottom: var(--spacing-xxl);
+
 }
 
 .about-section,
@@ -417,7 +410,7 @@ figcaption {
 
     .main-nav a {
         color: inherit;
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         color: var(--midnight-blue);
     }
 
