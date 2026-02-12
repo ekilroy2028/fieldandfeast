@@ -67,8 +67,10 @@ a:hover {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: var(--spacing-lg) var(--spacing-sm);
+    padding: 0rem 1rem
 }
+
+
 
 .site-title {
     font-size: 2.5rem;
@@ -91,7 +93,7 @@ a:hover {
 .site-tagline {
     font-size: 1rem;
     font-style: italic;
-
+    margin-bottom: var(--spacing-lg);
     font-weight: 400;
 }
 
@@ -102,7 +104,7 @@ a:hover {
     background-color: var(--champagne-gold);
     display: flex;
     justify-content: space-around;
-
+    padding: var(--spacing-sm);
     margin: 0 calc(-1 * var(--spacing-sm));
     margin-top: var(--spacing-md);
 }
@@ -111,7 +113,7 @@ a:hover {
     color: var(--midnight-blue);
     font-weight: 600;
     font-size: 1.25rem;
-
+    padding: var(--spacing-xs);
     transition: opacity 0.3s ease;
 }
 
@@ -144,17 +146,25 @@ h3 {
 }
 
         /* about section */
+.about-section,
+.offer-section,
+.gallery-section {
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
 
 }
 
 .about-section,
 .offer-section {
     border-bottom: 2px solid var(--champagne-gold);
-
+    padding: 0 10px;
 }
 
 .gallery-section {
     border-top: 2px solid var(--champagne-gold);
+    padding: 0 10px;
     padding-top: var(--spacing-xxl);
 }
 
