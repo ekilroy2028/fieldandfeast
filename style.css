@@ -66,7 +66,18 @@ a:hover {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: 0rem 1rem
+    padding: var(--spacing-lg) 0;
+    width: 100%;
+    margin: 0;
+}
+
+.site-header > * {
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+
 }
 
 
@@ -104,8 +115,9 @@ a:hover {
     display: flex;
     justify-content: space-around;
     padding: var(--spacing-sm);
-    margin: 0 calc(-1 * var(--spacing-sm));
+    margin: 0;
     margin-top: var(--spacing-md);
+    width: 100%;
 }
 
 .main-nav a {
@@ -272,7 +284,9 @@ figcaption {
     color: var(--soft-white);
     text-align: center;
     line-height: 5px;
-    padding: var(--spacing-xl) var(--spacing-sm)
+    padding: var(--spacing-xl) 0;
+    width: 100%;
+    margin: 0;
 }
 
 .site-footer address {
