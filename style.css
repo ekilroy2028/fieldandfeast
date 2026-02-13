@@ -185,10 +185,12 @@ h3 {
 .gallery-section {
     border-top: 2px solid var(--champagne-gold);
     padding: 0 10px;
-    padding-top: var(--spacing-xxl);
+    padding-top: var(--spacing-sm);
 }
 
-
+.gallery-section > p {
+    margin-bottom: var(--spacing-md);
+}
 
 .about-section p {
     font-size: 1rem;
@@ -246,7 +248,7 @@ figcaption {
 .gallery-intro {
     font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
 }
 
 .gallery-grid {
