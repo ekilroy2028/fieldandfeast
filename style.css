@@ -40,7 +40,6 @@ body {
     font-family: 'Playfair Display', Arial, sans-serif;
     color: var(--dark-charcoal);
     background-color: var(--soft-white);
-    line-height: -1.7;
     font-size: 16px;
 }
 
@@ -272,6 +271,7 @@ figcaption {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
+    line-height: 10px;
     padding: var(--spacing-xl) var(--spacing-sm)
 }
 
@@ -282,6 +282,7 @@ figcaption {
 .site-address {
     font-style: normal;
     margin-bottom: var(--spacing-lg);
+    line-height: -15px;
 }
 
 .site-address p {
@@ -315,6 +316,7 @@ figcaption {
 .social-links a {
     font-size: 1rem;
     font-weight: 600;
+    line-height: 5rem;
 }
 
 
