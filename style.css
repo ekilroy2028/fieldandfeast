@@ -195,6 +195,7 @@ h3 {
 .about-section p {
     font-size: 1rem;
     line-height: 1.8;
+    margin-bottom: var(--spacing-md);
 }
 
         /* offering section */
@@ -307,8 +308,7 @@ figcaption {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-
-    padding: var(--spacing-xl) 0;
+    padding: 4rem 0 0 0;
     width: 100%;
     margin: 0;
 }
@@ -461,7 +461,7 @@ figcaption {
 
     .main-nav a {
         color: inherit;
-        font-size: 1.25rem;
+        font-size: 2rem;
         color: var(--midnight-blue);
     }
 
