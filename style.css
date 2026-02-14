@@ -6,6 +6,17 @@
 
 /* CSS RESET */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* ROOT VARIABLES */
 
@@ -59,14 +70,24 @@ a:hover {
 }
 
 
-
     /*Header */
 
 .site-header {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: 0rem 1rem
+    padding: var(--spacing-xl) 0 0 0;
+    width: 100%;
+    margin: 0;
+}
+
+.site-header > *:not(.main-nav) {
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+
 }
 
 
@@ -92,7 +113,7 @@ a:hover {
 .site-tagline {
     font-size: 1rem;
     font-style: italic;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
     font-weight: 400;
 }
 
@@ -102,17 +123,17 @@ a:hover {
 .main-nav {
     background-color: var(--champagne-gold);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: var(--spacing-sm);
-    margin: 0 calc(-1 * var(--spacing-sm));
-    margin-top: var(--spacing-md);
+    margin: 0;
+    width: 100%;
 }
 
 .main-nav a {
     color: var(--midnight-blue);
     font-weight: 600;
-    font-size: 1.25rem;
-    padding: var(--spacing-xs);
+    font-size: 2rem;
+    padding: var(--spacing-xs) var(--spacing-lg);
     transition: opacity 0.3s ease;
 }
 
@@ -126,13 +147,13 @@ a:hover {
 }
 
 section {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xxl);
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
     color: var(--dark-charcoal);
     line-height: 1.2;
 }
@@ -155,23 +176,31 @@ h3 {
 
 }
 
-.about-section,
+.about-section {
+    border-bottom: 2px solid var(--champagne-gold);
+    padding: 4rem 0 0 0;
+}
+
 .offer-section {
     border-bottom: 2px solid var(--champagne-gold);
-    padding: 0 10px;
+    padding: var(--spacing-lg) 0;
 }
 
 .gallery-section {
-    border-top: 2px solid var(--champagne-gold);
     padding: 0 10px;
-    padding-top: var(--spacing-xxl);
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--champagne-gold);
 }
 
-
+.gallery-section > p {
+    margin-bottom: var(--spacing-lg);
+}
 
 .about-section p {
     font-size: 1rem;
     line-height: 1.8;
+    margin-bottom: var(--spacing-md);
 }
 
         /* offering section */
@@ -218,13 +247,14 @@ figcaption {
     font-size: medium;
     font-style: italic;
     text-align: center;
-    margin: 1px;
+    margin: 0;
+    padding: var(--spacing-sm);
 }
 
 .gallery-intro {
     font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
 }
 
 .gallery-grid {
@@ -240,6 +270,18 @@ figcaption {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item picture {
+    flex-shrink: 0;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .gallery-item:hover {
@@ -271,13 +313,14 @@ figcaption {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    line-height: 5px;
-    padding: var(--spacing-xl) var(--spacing-sm)
+    padding: var(--spacing-xxl) 0 0 0;
+    width: 100%;
+    margin: 0;
 }
 
 .site-footer address {
     font-style: normal;
-    line-height: 10px;
+    line-height: 1.8;
 }
 
 .site-address {
@@ -337,7 +380,7 @@ figcaption {
     }
 
     main {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-xl);
     }
 
     .offer-grid {
@@ -416,14 +459,14 @@ figcaption {
         /* hort view */
     .main-nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: var(--spacing-xxl);
         padding: var(--spacing-md);
     }
 
     .main-nav a {
         color: inherit;
-        font-size: 1.25rem;
+        font-size: 2rem;
         color: var(--midnight-blue);
     }
 
