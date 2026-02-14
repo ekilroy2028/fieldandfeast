@@ -132,7 +132,7 @@ a:hover {
 .main-nav a {
     color: var(--midnight-blue);
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 2rem;
     padding: var(--spacing-xs);
     transition: opacity 0.3s ease;
 }
@@ -179,7 +179,7 @@ h3 {
 .about-section,
 .offer-section {
     border-bottom: 2px solid var(--champagne-gold);
-    padding: 0 10px;
+    padding: 10px 0;
 }
 
 .gallery-section {
