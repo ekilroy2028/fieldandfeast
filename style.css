@@ -76,7 +76,7 @@ a:hover {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: var(--spacing-lg) 0 0 0;
+    padding: var(--spacing-xl) 0 0 0;
     width: 100%;
     margin: 0;
 }
@@ -147,13 +147,13 @@ a:hover {
 }
 
 section {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xxl);
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
     color: var(--dark-charcoal);
     line-height: 1.2;
 }
@@ -179,17 +179,16 @@ h3 {
 .about-section,
 .offer-section {
     border-bottom: 2px solid var(--champagne-gold);
-    padding: 10px 0;
+    padding: var(--spacing-xxl) 0;
 }
 
 .gallery-section {
-    border-top: 2px solid var(--champagne-gold);
     padding: 0 10px;
-    padding-top: var(--spacing-sm);
+    padding-top: var(--spacing-lg);
 }
 
 .gallery-section > p {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
 }
 
 .about-section p {
@@ -256,7 +255,7 @@ figcaption {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
 }
 
 .gallery-item {
@@ -308,7 +307,7 @@ figcaption {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: 4rem 0 0 0;
+    padding: var(--spacing-xxl) 0 0 0;
     width: 100%;
     margin: 0;
 }
@@ -375,7 +374,7 @@ figcaption {
     }
 
     main {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-xl);
     }
 
     .offer-grid {
