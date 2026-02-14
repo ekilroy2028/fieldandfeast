@@ -185,10 +185,12 @@ h3 {
 .gallery-section {
     padding: 0 10px;
     padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--champagne-gold);
 }
 
 .gallery-section > p {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
 }
 
 .about-section p {
@@ -255,7 +257,7 @@ figcaption {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
 }
 
 .gallery-item {
