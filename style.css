@@ -123,7 +123,7 @@ a:hover {
 .main-nav {
     background-color: var(--champagne-gold);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: var(--spacing-sm);
     margin: 0;
     width: 100%;
@@ -133,7 +133,7 @@ a:hover {
     color: var(--midnight-blue);
     font-weight: 600;
     font-size: 2rem;
-    padding: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-lg);
     transition: opacity 0.3s ease;
 }
 
@@ -455,7 +455,7 @@ figcaption {
         /* hort view */
     .main-nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: var(--spacing-xxl);
         padding: var(--spacing-md);
     }
