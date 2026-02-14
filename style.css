@@ -6,17 +6,6 @@
 
 /* CSS RESET */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 
 /* ROOT VARIABLES */
 
@@ -70,24 +59,14 @@ a:hover {
 }
 
 
+
     /*Header */
 
 .site-header {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: var(--spacing-xl) 0 0 0;
-    width: 100%;
-    margin: 0;
-}
-
-.site-header > *:not(.main-nav) {
-    max-width: var(--container-max);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--spacing-sm);
-    padding-right: var(--spacing-sm);
-
+    padding: 0rem 1rem
 }
 
 
@@ -123,17 +102,17 @@ a:hover {
 .main-nav {
     background-color: var(--champagne-gold);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: var(--spacing-sm);
-    margin: 0;
-    width: 100%;
+    margin: 0 calc(-1 * var(--spacing-sm));
+    margin-top: var(--spacing-md);
 }
 
 .main-nav a {
     color: var(--midnight-blue);
     font-weight: 600;
-    font-size: 2rem;
-    padding: var(--spacing-xs) var(--spacing-lg);
+    font-size: 1.25rem;
+    padding: var(--spacing-xs);
     transition: opacity 0.3s ease;
 }
 
@@ -147,13 +126,13 @@ a:hover {
 }
 
 section {
-    margin-bottom: var(--spacing-xxl);
+    margin-bottom: var(--spacing-sm);
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     color: var(--dark-charcoal);
     line-height: 1.2;
 }
@@ -179,24 +158,20 @@ h3 {
 .about-section,
 .offer-section {
     border-bottom: 2px solid var(--champagne-gold);
-    padding: var(--spacing-xxl) 0;
+    padding: 0 10px;
 }
 
 .gallery-section {
+    border-top: 2px solid var(--champagne-gold);
     padding: 0 10px;
-    padding-top: var(--spacing-lg);
-    padding-bottom: var(--spacing-lg);
-    border-bottom: 2px solid var(--champagne-gold);
+    padding-top: var(--spacing-xxl);
 }
 
-.gallery-section > p {
-    margin-bottom: var(--spacing-lg);
-}
+
 
 .about-section p {
     font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: var(--spacing-md);
 }
 
         /* offering section */
@@ -243,14 +218,13 @@ figcaption {
     font-size: medium;
     font-style: italic;
     text-align: center;
-    margin: 0;
-    padding: var(--spacing-sm);
+    margin: 1px;
 }
 
 .gallery-intro {
     font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
 }
 
 .gallery-grid {
@@ -266,18 +240,6 @@ figcaption {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.gallery-item picture {
-    flex-shrink: 0;
-}
-
-.gallery-item img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .gallery-item:hover {
@@ -309,14 +271,13 @@ figcaption {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: var(--spacing-xxl) 0 0 0;
-    width: 100%;
-    margin: 0;
+    line-height: 5px;
+    padding: var(--spacing-xl) var(--spacing-sm)
 }
 
 .site-footer address {
     font-style: normal;
-    line-height: 1.8;
+    line-height: 10px;
 }
 
 .site-address {
@@ -376,7 +337,7 @@ figcaption {
     }
 
     main {
-        padding: var(--spacing-xl);
+        padding: var(--spacing-lg);
     }
 
     .offer-grid {
@@ -455,14 +416,14 @@ figcaption {
         /* hort view */
     .main-nav {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         gap: var(--spacing-xxl);
         padding: var(--spacing-md);
     }
 
     .main-nav a {
         color: inherit;
-        font-size: 2rem;
+        font-size: 1.25rem;
         color: var(--midnight-blue);
     }
 
