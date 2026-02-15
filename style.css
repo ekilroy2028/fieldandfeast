@@ -6,17 +6,54 @@
 
 /* CSS RESET */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-    margin: 0;
-    padding: 0;
+	line-height: 1;
 }
-
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /* ROOT VARIABLES */
 
@@ -185,17 +222,22 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px;
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
 
 }
 
 .about-section {
     border-bottom: 2px solid var(--champagne-gold);
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .offer-section {
     border-bottom: 2px solid var(--champagne-gold);
     padding: var(--spacing-lg) 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery-section {
@@ -203,6 +245,7 @@ h3 {
     padding-top: var(--spacing-lg);
     padding-bottom: var(--spacing-lg);
     border-bottom: 2px solid var(--champagne-gold);
+    margin-bottom: var(--spacing-xxl);
 }
 
 .gallery-section > p {
