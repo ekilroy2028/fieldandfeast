@@ -231,7 +231,7 @@ h3 {
 }
 
 .offer-card p {
-    font-size: 0.95;
+    font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: var(--spacing-sm);
 }
@@ -338,7 +338,7 @@ figcaption {
 .site-address {
     font-style: normal;
     margin-bottom: var(--spacing-lg);
-    line-height: -15px;
+    line-height: 1.5;
 }
 
 .site-address p {
@@ -455,7 +455,7 @@ section {
 
     .about-section p,
     .gallery-intro {
-        font-size: 1.1;
+        font-size: 1.1rem;
     }
 
     section {
