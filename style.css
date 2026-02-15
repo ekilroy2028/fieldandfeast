@@ -418,7 +418,7 @@ section {
 }
 
 @media screen and (min-width: 600px) {
-    .offer-card:nth-child(3) {
+    .offer-card:nth-child(4) {
         grid-column: span 2;
     }
 
